@@ -1,22 +1,34 @@
 import React from 'react';
 import heroim from '../assets/hero.png';
+import wavehaikei from '../assets/wavehaikei.png';
 
 const HeroSection = () => {
+  const heroSectionStyle = {
+    backgroundImage: `url(${wavehaikei})`, // Set the background image
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  };
+
   return (
-    <div className="hero-section relative bg-indigo-700 flex items-center justify-between px-10 py-32">
-      <div className="hero-content max-w-1/2 z-10">
-        <h1 className="text-white text-4xl mb-6">Leveraging the Technology <br /> to help Communities Flourish <br />
-         more Quickly</h1>
-        <p className="text-white text-lg mb-8">
-          A worldwide contribution of digital solutions and networks proffered alternatives <br /> of methodical and structured solutions for well-defined development services.
-        </p>
-        <div className="space-x-4">
-          <button className="px-6 py-2 text-purple-500 bg-white rounded">Learn More</button>
-          <button className="px-6 py-2 text-purple-500 bg-white rounded">Get Started</button>
+    <div className="hero-section relative" style={heroSectionStyle}>
+      <div className=" opacity-75 absolute inset-0"></div>
+      <div className="flex items-center justify-between px-10 py-32 relative z-10">
+        <div className="hero-content max-w-1/2">
+          <h1 className="text-white text-4xl mb-6">Leveraging the Technology <br /> to help Communities Flourish <br />
+            more Quickly</h1>
+          <p className="text-white text-lg mb-8">
+            A worldwide contribution of digital solutions and networks proffered alternatives <br /> of methodical and
+            structured solutions for well-defined development services.
+          </p>
+          <div className="space-x-4">
+            <button className="px-6 py-2 text-purple-500 bg-white rounded">Learn More</button>
+            <button className="px-6 py-2 text-purple-500 bg-white rounded">Get Started</button>
+          </div>
         </div>
-      </div>
-      <div className="hero-image max-w-2/5 z-10">
-        <img src={heroim} alt="Hero" className="w-full rounded-md" />
+        <div className="hero-image max-w-2/5">
+          <img src={heroim} alt="Hero" className="w-full rounded-md" />
+        </div>
       </div>
       {/* Wave curve design at the bottom */}
       <div className="absolute bottom-0 left-0 right-0 z-0">
