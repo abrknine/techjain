@@ -1,16 +1,20 @@
-import React from 'react'
+import React from 'react';
 
 const Contact = () => {
   return (
-    <div className=' bg-indigo-700 flex  flex-col  items-center justify-between px-10 py-32  w-[1320px] h-[352px]  '>
-      
-      <div >
-                <h2 className='text-white'>--NEED SOME MORE HELP?--</h2>
-                <h1 className='flex ml-6'>Contact us!</h1>
+    <div className='flex items-center justify-center h-[352px] bg-[#6222CC] text-center'>
+      <div>
+        <h2 className='text-white  mb-4'>--NEED SOME MORE HELP?--</h2>
+        <h1 className='text-white font-extrabold text-4xl mb-6'>Contact us!</h1>
+        <input
+          type="text"
+          placeholder='Enter your Email'
+          className='w-[690px] h-[49px] rounded-full px-4'
+        />
       </div>
-      <input type="text" placeholder='Enter your Email' className='w-[690px] h-[49px]  rounded-8xl '  />
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
+
